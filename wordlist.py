@@ -6,7 +6,7 @@ print("""
 Yontem secin: 
 
 1) Uzunluk ve belirlenin sayiya gore olustur
-2) Belirlenen cumledeki kelimlerle olustur
+2) Belirlenen cumledeki kelimelerle olustur
 
 """)
 yontem = int(input("> "))
@@ -20,7 +20,7 @@ if yontem == 1:
         f.write(m+"\n")
         f.close
 
-if yontem == 2:
+elif yontem == 2:
     cumle = input("Cumlenizi girin: ")
     splitmetod = re.split(r"[-;,.'\s]\s*",cumle)
     dedz = open("wordlist2.txt","w")
